@@ -8,7 +8,7 @@ p = 0
 goal = 500000
 
 # annual interest
-j = 0.07
+j = 0.04
 # inflation
 i = 0.08
 
