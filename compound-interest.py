@@ -10,7 +10,7 @@ goal = 500000
 # annual interest
 j = 0.07
 # inflation
-i = 0.06
+i = 0.08
 
 
 # periodicity of replenishment
