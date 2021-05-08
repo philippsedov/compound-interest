@@ -4,6 +4,8 @@ km = 10000
 t = 5
 # target
 goal = 500000
+# start-up capital
+st = 5000
 
 # annual interest
 j = 0.04
@@ -18,15 +20,15 @@ m = 12
 
 # how much you need to top up per month,
 # to achieve a goal in t years
-a = goal * ((j-i)/m) * (1/( (1+((j-i)/m))**(m*t)-1 ) )
+a = (goal-st) * ((j-i)/m) * (1/( (1+((j-i)/m))**(m*t)-1 ) )
 print (int(a))
 
 print ("-")
 
 # amount in years
 for n in range(1, t+1):
-    p1 = km * ( (1+(j-i)/m)**(m*n)-1 ) * m/(j-i)
-    if p1<goal:
-        print(int(p1))
+    p = st + km * ( (1+(j-i)/m)**(m*n)-1 ) * m/(j-i)
+    if p<goal:
+        print(int(p))
     else:
-        print(int(p1), n)
+        print(int(p), n)
