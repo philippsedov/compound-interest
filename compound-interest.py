@@ -2,8 +2,6 @@
 km = 10000
 #period
 t = 5
-# start-up capital
-p = 0
 # target
 goal = 500000
 
@@ -26,7 +24,6 @@ print (int(a))
 print ("-")
 
 # amount in years
-p1 = p
 for n in range(1, t+1):
     p1 = km * ( (1+(j-i)/m)**(m*n)-1 ) * m/(j-i)
     if p1<goal:
