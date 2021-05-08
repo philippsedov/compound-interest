@@ -3,6 +3,7 @@ km = 10000
 #период
 t = 5
 #стартовый капитал
+st = 5000
 #цель
 goal = 500000
 
@@ -19,15 +20,15 @@ m = 12
 
 #сколько нужно пополнять в месяц,
 #что бы достич goal за t лет
-a = goal * ((j-i)/m) * (1/( (1+((j-i)/m))**(m*t)-1 ) )
+a = (goal-st) * ((j-i)/m) * (1/( (1+((j-i)/m))**(m*t)-1 ) )
 print (int(a))
 
 print ("-")
 
 #сумма через года
 for n in range(1, t+1):
-    p1 = km * ( (1+(j-i)/m)**(m*n)-1 ) * m/(j-i)
-    if p1<goal:
-        print(int(p1))
+    p = st + km * ( (1+(j-i)/m)**(m*n)-1 ) * m/(j-i)
+    if p<goal:
+        print(int(p))
     else:
-        print(int(p1), n)
+        print(int(p), n)
