@@ -18,9 +18,8 @@ m = 12
 # how much you need to invest per month,
 # to achieve a goal in t years
 a = (goal-st) * ((j-i)/m) * (1/( (1+((j-i)/m))**(m*t)-1 ) )
-print (int(a))
+print (int(a), '\n')
 
-print ("-")
 # amount in years
 km = a
 for n in range(1, t+1):
