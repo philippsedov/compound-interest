@@ -1,5 +1,3 @@
-# capitalization per month
-#km = 10000
 #period
 t = 5
 # target
@@ -12,8 +10,7 @@ j = 0.04
 # inflation
 i = 0.08
 
-
-# periodicity of replenishment
+# periodicity of replenishment per annum
 m = 12
 
 #—————
