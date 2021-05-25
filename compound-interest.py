@@ -18,7 +18,7 @@ m = 12
 
 #—————
 
-# how much you need to top up per month,
+# how much you need to invest per month,
 # to achieve a goal in t years
 a = (goal-st) * ((j-i)/m) * (1/( (1+((j-i)/m))**(m*t)-1 ) )
 print (int(a))
