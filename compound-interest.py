@@ -28,7 +28,9 @@ print ("-")
 km = a
 for n in range(1, t+1):
     p = st + km * ( (1+(j-i)/m)**(m*n)-1 ) * m/(j-i)
-    if p<goal:
+    if n==1 or n%5==0:
+        print(int(p), n, y+n)
+    elif p<goal:
         print(int(p))
     else:
-        print(int(p), n)
+        print(int(p), n, y+n)
