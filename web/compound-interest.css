@@ -1,0 +1,26 @@
+html {
+	background-color: #F9F6EA;
+	color: #0000ff;
+	font: 800 7vmin 'Proxima Nova',sans-serif;
+}
+
+p {	margin: 7vmin; cursor:default;}
+
+input {
+   background: yellow !important;
+   outline: none;
+	 border: 0;
+	 max-width: 40vmin;
+	 outline: none;
+	 font-size: 7vmin;
+   font-family: 'Proxima Nova';
+}
+
+span#goal {color: #000}
+span#result {color: #000; font-size: 10vmin;}
+span#s_inflation {color: #ff0000}
+span#condition {color: #ccc}
+
+::selection {
+background-color: yellow;
+}

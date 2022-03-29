@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сколько откладывать в месяц</title>
+  <link rel="stylesheet" href="compound-interest.css">
+</head>
+<body>
+  <p>Что-бы накопить
+    <input type="number" id="goal" class="sum-input" value="1000000">
+    <br>за&nbsp;<input style="width:15vmin" type="number" id="nMonth" class="sum-input" value="12">&nbsp;месяцев
+    <br><span id="condition">надо&nbsp;вкладывать в&nbsp;месяц</span>
+    <br><span id="result">20065.43</span>
+  </p>
+
+  <p><span id="condition">при условиях:</span>
+    <br><span id="s_inflation">инфляция %</span> <input style="width:20vmin" type="number" id="inflation" class="sum-input" value="9.16">
+    <br><span style="color:#000000">вклад&nbsp;% <input style="width:20vmin" type="number" id="annualInterest" class="sum-input" value="12"></span>
+    <br><span style="color:#00ff00">стартовый&nbsp;капитал&nbsp;<input style="width:30vmin" type="number" id="startCapital" class="sum-input" value="0"></span></p>
+
+    <!-- <input type="number" id="input-a" class="sum-input" /> -->
+    <!-- <b>+</b>
+    <input type="number" id="input-b" class="sum-input" />
+    </div> -->
+
+  <noscript>Включите JavaScript</noscript>
+  <script src="compound-interest.js" charset="utf-8"></script>
+</body>
+</html>
