@@ -18,5 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var sumInputs = document.getElementsByClassName("sum-input");
   for (input of sumInputs) {
     input.addEventListener('keyup', onInput);
+    input.addEventListener('click', onInput);
   }
 });
